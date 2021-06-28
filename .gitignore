@@ -1,0 +1,16 @@
+**/.idea/
+**/.ipynb_checkpoints/
+**/.vscode
+**/__pycache__
+__pycache__/
+dataset/
+.div2k/
+weights/
+resolved_samples/
+models/
+cinestill/
+digital_Dataset/
+digital_Dataset_raw/
+model_weights/
+*.ipynb
+*.docx
