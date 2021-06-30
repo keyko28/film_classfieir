@@ -14,7 +14,7 @@ https://vk.com/dev
 
 from multiprocessing.queues import Queue
 import requests
-from utils import clearify, load_from_json, create_folder, create_csv
+from utils import clearify, load_from_json, create_folder, create_csv, get_film_names
 from typing import List, Union
 from multiprocessing import Process, Queue
 import psutil
@@ -93,20 +93,6 @@ def process_data(data: Union[dict, str], key: str = None) -> Union[list, set]:
 
     else:
         raise TypeError('Only dict or single str are expected')
-
-
-def get_film_names(test_path: str, key: str = 'names') -> List[dict]:
-    """
-    require film names from json file:
-    input:
-        test_path - path to the json file
-        key - key to make query with
-    output:
-        list of dicts with info per each film type
-    """
-
-    names = load_from_json(test_path)
-    return names[key]
 
 
 def get_urls(token: str,

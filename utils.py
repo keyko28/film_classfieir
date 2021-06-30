@@ -14,6 +14,20 @@ import os
 import re
 
 
+def get_film_names(test_path: str, key: str = 'names') -> List[dict]:
+    """
+    require film names from json file:
+    input:
+        test_path - path to the json file
+        key - key to make query with
+    output:
+        list of dicts with info per each film type
+    """
+
+    names = load_from_json(test_path)
+    return names[key]
+
+
 def clearify(text: str) -> str:
     """
     get rid of unuseful text symbols in the given str
