@@ -1,16 +1,10 @@
 # super_resolution
 
-## short readme to this pet superresolution project
+## what is all about
 
-This is a simple resnet with an adjustable number of res blocks  
-as an upsacle layer CONV2DTRANSPOSE is used
+This is a simple resnet with an adjustable number of res blocks for classification between kodak portra 400 and cinestill 800t
 
-that project is still in development
+#### classification results
+![alt text](https://github.com/keyko28/film_classfieir/blob/master/classification_results/cinestill%20800t.png)
 
-#### short TODO list
-
-1. Add picture saving after n_th iteration to compare with test df
-2. Add perceptual loss function
-3. fihish a learning proccess
-4. try to use leaky RELU as an activation function
-5. Add docstrings, type hints and annotations, 
+![alt text](hhttps://github.com/keyko28/film_classfieir/blob/master/classification_results/kodak%20portra%20400.png)
